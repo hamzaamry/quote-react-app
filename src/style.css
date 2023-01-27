@@ -1,0 +1,105 @@
+body{
+  align-items: center;
+  height: 90vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.advice-section {
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: larger;
+    padding: 35px;
+}
+
+.AdviceCard{
+    background-color: whitesmoke;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.advice-generator {
+    margin-top: 40px ;
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    opacity: 1;
+    text-decoration: none;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid ;
+    
+}
+
+.advice-generator:hover {
+    animation: rotate 0.7s ease-in-out both;
+    background-color: #dddbdb;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+    
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }  
+  
+  @media only screen and (max-width: 600px) {
+    .AdviceCard {
+        width: 80%;
+        height: 30%;
+    }
+  }
